@@ -1,11 +1,12 @@
+import tensorflow as tf
 from keras_applications.imagenet_utils import _obtain_input_shape
-from keras import backend as K
-from keras.layers import Input, Convolution2D, MaxPooling2D, Activation, concatenate, Dropout
-from keras.layers import GlobalAveragePooling2D, GlobalMaxPooling2D
-from keras.models import Model
-from keras.utils.layer_utils import get_source_inputs
-from keras.utils import get_file
-from keras.utils import layer_utils
+from tensorflow.keras import backend as K
+from tensorflow.keras.layers import Input, Convolution2D, MaxPooling2D, Activation, concatenate, Dropout
+from tensorflow.keras.layers import GlobalAveragePooling2D, GlobalMaxPooling2D
+from tensorflow.keras.models import Model
+from tensorflow.keras.utils import get_source_inputs
+from tensorflow.keras.utils import get_file
+from tensorflow.python.keras.utils import layer_utils
 import warnings
 
 sq1x1 = "squeeze1x1"
